@@ -1,0 +1,62 @@
+* {
+width: inherit;
+font-family: "Oswald", Arial, sans-serif;
+}
+#wrapper {
+  position: absolute;
+  margin: 50px 150px;
+  background-color: white;
+  border-radius: 20px;
+  min-height: 600px;
+  width:  900px;
+}
+body {
+  background: url("./images/BluePattern.jpg");
+  background-size: cover;
+}
+h1 {
+  margin: inherit;
+}
+p {
+  background-color: inherit;
+
+}
+#header {
+  height: 75px;
+  border-bottom: 2px dotted black;
+  text-align:center;
+  padding-top: 10px;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  background-color: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+#leftcolumn {
+  margin: 50px;
+  width: 300px;
+  /* position: absolute; */
+  height: inherit;
+  /* display: flex;
+  flex-direction: column; */
+
+}
+#headshot {
+  border: 2px solid red;
+  /* position: relative;  */
+  width: 175px;
+  height: 175px;
+}
+#contact {
+  /* position:absolute;  */
+  margin-top: 100px;
+}
+]
+#rightcolumn {
+  margin-left: 350px;
+  right: 0;
+  /* position: absolute; */
+  border: 1px solid blue;
+
+}

@@ -1,23 +1,32 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Oswald|Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>KWG Profile</title>
+</head>
+<body>
+	<div id=wrapper>
+		<div id=header>
+			Kevin Golden's Sub-Optimal Web Profile
+		</div>
+		<div id=leftcolumn>
+			<!-- <p>left column?</p>  -->
+			<div id="headshot">
+				<p><img src="./images/kwgheadshot.jpg" alt=""><p>
+				</div>
+			<div id="contact">
+				<h2>Contact Information</h2>
+				<p><a href="mailto:kwg@cs.net?Subject=Web%20Profile%20Inquiry" target="_top">kwg@cs.net</a></p>
+				<p>703.946.8135<p>
+			</div>
+		</div>
+		<div id=rightcolumn>
+			<p>World's Oldest Junior Web Programmer<p>
+			<div id="nav">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
