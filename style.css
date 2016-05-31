@@ -33,6 +33,13 @@ p {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 }
+
+/* AM: If your positioning woes have to do with setting up columsn for your webpage, I would suggest looking into CSS grids. There are a number of ways to go about this. Some resources... */
+/* AM: CSS Grids lesson: https://github.com/ga-wdi-lessons/css-grids */
+/* AM: Columns with Flexbox: https://davidwalsh.name/flexbox-column */
+/* AM: Bootstrap: http://getbootstrap.com/css/ */
+/* AM: There are a lot of CSS frameworks that help out with column layouts, but Bootstrap is a good place to start. */
+
 #leftcolumn {
   margin: 50px;
   width: 300px;
