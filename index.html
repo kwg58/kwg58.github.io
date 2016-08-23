@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
   <script src="profile.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald|Lato|Montserrat' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="profile.css">
@@ -18,7 +19,7 @@
     <h3>Welcome to My Portfolio</h3>
   </header>
   <div id="main">
-    <div id="contact" class="left">
+    <div id="work" class="left">
       <h2>My Work</h2>
       <h4>Memory Game</h4>
       <h4>M*A*S*H Fansite</h4>
@@ -31,17 +32,31 @@
         <a id="linkedin" href="https://www.linkedin.com/in/kevinwgolden">Linkedin</a>
       </div>
       <div id=info>
-        <p>This is where stuff will go</p>
+        <div class="stack" id="experienceDiv">
+          <h3>Experience</h3>
+        </div>
+        <div class="stack" id="skillsDiv">
+          <h3>Skills</h3>
+        </div>
+        <!-- <div class="stack" id="thing3">
+          DIV THREE
+        </div>
+        <div class="stack" id="thing4">
+          DIV FOUR
+        </div> -->
+        <!-- <p>This is where stuff will go</p> -->
       </div>
     </div>
-    <div class="right">
+    <div id="contact" class="right">
       <h2>Contact Me</h2>
       <p><a href="mailto:kwg@cs.net?Subject=Web%20Profile%20Inquiry" target="_top">kwg@cs.net</a></p>
       <p>703.946.8135<p>
       </div>
     </div>
     <footer>
-      Footer
+      <script language="Javascript">
+      document.write("This page was last modified on: " + formatPubDate(document.lastModified) +"");
+      </script>
     </footer>
     <!-- </div> -->
   </body>

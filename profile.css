@@ -52,6 +52,17 @@ a:visited {
   color: white;
   cursor: pointer;
 }
+a:active {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.stack {
+  opacity: 0;
+}
+[id^=thing] {
+  position: absolute;
+}
 a:hover {
   text-decoration: none;
   color: blue;

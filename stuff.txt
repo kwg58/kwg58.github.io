@@ -1,0 +1,20 @@
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("li").toggleClass(function(n){
+            return "listitem_" + n;
+        });
+    });
+});
+
+  var months = [
+    'January', 'February', 'March',
+    'April', 'May', 'June',
+    'July', 'August', 'September',
+    'October', 'November', 'December'
+  ];
+  var dateIn = "08/23/2016 05:46:00"
+  var dateMid = dateIn.split(" ")[0].split("/");
+  monthNum = parseInt(dateMid[0]) - 1
+  console.log(dateMid[1] + " " + months[monthNum] + " " + dateMid[2])
+}
