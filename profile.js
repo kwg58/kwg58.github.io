@@ -1,4 +1,40 @@
+function formatPubDate(dateIn) {
+  // 08/23/2016 05:46:00
+  var months = [
+    'January', 'February', 'March',
+    'April', 'May', 'June',
+    'July', 'August', 'September',
+    'October', 'November', 'December'
+  ];
+  // var dateIn = "08/23/2016 05:46:00"
+  var dateMid = dateIn.split(" ")[0].split("/");
+  monthNum = parseInt(dateMid[0]) - 1
+  return (dateMid[1] + " " + months[monthNum] + " " + dateMid[2])
+}
+
 $(document).ready(function(){
+
+
+  $(function () {
+    $("[data-toggle='tooltip']").tooltip();
+    // $("[data-toggle='popover']").popover();
+
+    $('#munchkins').popover({
+        trigger:'hover',
+        title: 'Memory Game',
+        content:'Uses HTML, JavaScript, jQuery, Bootstrap',
+        placement:'right'
+    });
+        $('#mash').popover({
+            trigger:'hover',
+            title: 'MASH Fansite',
+            content:'Rails application features user logins and comments.',
+            placement:'right'
+        });
+  });
+
+
+
 
   // $("#skills").on({
   //   click: divFlip("skills", "c")
@@ -70,6 +106,8 @@ $(document).ready(function(){
 
 
 });
+
+
 // ignore mouseaway after click if it's the same object
 function divFlip(divIn, type) {
   if (type == "l") {
@@ -80,19 +118,4 @@ function divFlip(divIn, type) {
     $(".showing").toggleClass("stack showing");
     $(divX).toggleClass("stack showing");
   }
-}
-
-
-function formatPubDate(dateIn) {
-  // 08/23/2016 05:46:00
-  var months = [
-    'January', 'February', 'March',
-    'April', 'May', 'June',
-    'July', 'August', 'September',
-    'October', 'November', 'December'
-  ];
-  var dateIn = "08/23/2016 05:46:00"
-  var dateMid = dateIn.split(" ")[0].split("/");
-  monthNum = parseInt(dateMid[0]) - 1
-  return (dateMid[1] + " " + months[monthNum] + " " + dateMid[2])
 }
