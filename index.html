@@ -8,93 +8,86 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="profile.css">
   <title>KWG Profile </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <!-- <div id="wrapper"> -->
   <header>
     <!-- <p>Introducing</p> -->
     <h1>Kevin Golden</h1>
-    <p>World's Oldest Junior Web Programmer</p>
+    <p>Software Industry Veteran and Full Stack Web Developer </p>
+    <p><a href="mailto:kwg@cs.net?Subject=Web%20Profile%20Inquiry" target="_top">kwg@cs.net</a> | 703.946.8135</p>
     <!-- <h3>Welcome to My Portfolio</h3> -->
   </header>
   <div id="main">
     <div id="work" class="left">
       <h2>My Work</h2>
       <ul>  <!-- data-toggle="popover" title="Memory Game" data-content="Lorem Ipsum Donor" data-placement="right"  -->
-        <li><a id="munchkins" href="https://munchkin-match.herokuapp.com/">Memory Game</a></li>
-        <li><a id="mash" href="https://kevin-golden-mash-fansite.herokuapp.com">M*A*S*H Fansite</a></li>
+        <li><a id="munchkins" href="https://munchkin-match.herokuapp.com/" data-toggle="popover" title="GA Project" data-content="Card-flipping memory game created with JavaScript, jQuery, HTML, CSS." data-placement="right" data-original-title="">Memory Game</a></li>
+        <li><a id="mash" href="https://kevin-golden-mash-fansite.herokuapp.com" title="GA Project" data-content="M*A*S*H fansite created with Rails, HTML, CSS.  Comments capability currently being revised." data-placement="right" data-original-title="">M*A*S*H Fansite</a></li>
       </ul>
+
     </div>
     <div class="center">
-      <div id="nav">
-        <!-- <a id="experience" href="#">Experience</a> |
-        <a id="skills" href="#">Skills</a> | -->
-        <a id="resume" href="resume.pdf" data-toggle="popover" title="My Resume" data-content="Lorem Ipsum Donor." data-placement="bottom" data-original-title="Blah blah blah">Resume</a> |
-        <a id="github" href="http://www.github.com/kwg58" data-toggle="tooltip" title="My Github Site" data-placement="top" data-original-title="">Github</a> |
-        <a id="linkedin" href="https://www.linkedin.com/in/kevinwgolden">Linkedin</a>
-      </div>
+
       <div id=info>
-        <!-- <div class="stack" id="experiencemDiv">
-          <h3>Experience Overview</h3>
-        </div>
-        <div class="stack" id="experiencecDiv">
-          <h3>Experience Details</h3>
-        </div>
-        <div class="stack" id="skillsmDiv">
-          <h3>Skills Overview</h3>
-        </div> -->
-        <div  id="skillscDiv">
-          <h3>Skills</h3>
-          <table>
-            <tr>
-              <td>
-                Front-End:
+        <h2>Skills</h2>
+        <table>
+          <tr>
+            <td>
+              <h4>Front-End</h4>
+            </td>
+            <td>
+              <ul>
+                <li>HTML/CSS/SASS
+                  <li>JavaScript, jQuery</li>
+                  <li>Angular, React</li>
+                </ul>
               </td>
-              <td>
-                HTML/CSS/SASS, JavaScript, jQuery, Angular, React
-              <td>
             </tr>
-              <tr>
-                <td>
-                  Back-End:
-                </td>
-                <td>
-                    Rails/ActiveRecord, Express
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Databases:
-                </td>
-                <td>
-                  PostgreSQL, MONGO, SQL
-                </td>
-                </tr>
-              </table>
-            </div>
-            <div class="stack" id="munchkinsmDiv">
-              <h3>Munchkins</h3>
-            </div>
-            <div class="stack" id="mashmDiv">
-              <h3>MASH</h3>
-            </div>
-            <div class="showing" id="sayingDiv">
-              <!-- <h3>Pithy Quotes</h3> -->
-            </div>
-          </div>
-        </div>
-        <div id="contact" class="right">
-          <h2>Contact Me</h2>
-          <p><a href="mailto:kwg@cs.net?Subject=Web%20Profile%20Inquiry" target="_top">kwg@cs.net</a></p>
-          <p>703.946.8135<p>
-          </div>
-        </div>
-        <footer>
-          <script language="Javascript">
-          document.write("This page was last modified on: " + formatPubDate(document.lastModified) +"");
-          </script>
-        </footer>
-        <!-- </div> -->
-      </body>
-      </html>
+            <td>
+              <h4>Back-End</h4>
+            </td>
+            <td>
+              <ul>
+                <li>Rails</li>
+                <li>ActiveRecord</li>
+                <li>Express</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Database</h4>
+            </td>
+            <td>
+              <ul>
+                <li>SQL</li>
+                <li>PostgreSQL</li>
+                <li>MONGO</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="right">
+      <h2>Links</h2>
+      <div id="nav">
+        <ul>
+          <li><a id="resume" href="resume.pdf" data-toggle="tooltip" title="My Resume" data-placement="left" data-original-title="">Resume</a></li>
+          <li><a id="github" href="http://www.github.com/kwg58" data-toggle="tooltip" title="My Github Site" data-placement="left" data-original-title="">Github</a></li>
+          <li><a id="linkedin" href="https://www.linkedin.com/in/kevinwgolden" data-toggle="tooltip" title="My LinkedIn Page" data-placement="left" data-original-title="">Linkedin</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    <script>
+    document.write("This page was last modified on: " + formatPubDate(document.lastModified) +"");
+    </script>
+  </footer>
+  <!-- </div> -->
+</body>
+</html>

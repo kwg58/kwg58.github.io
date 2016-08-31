@@ -9,7 +9,7 @@ body {
 }
 h1 {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 4px;
   text-align: center;
   font-size: 52px;
@@ -30,10 +30,11 @@ h3 {
   color: white;
 }
 h4 {
-  text-align: center;
+  text-align: left;
   font-size: 28px;
   font-style: bold;
   color: white;
+  padding: 0;
 }
 p {
   margin: 0;
@@ -44,6 +45,11 @@ p {
   color: white;
   /*border: solid white 1px;*/
 }
+
+h4 > p {
+  text-align: left;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -58,17 +64,17 @@ a:active {
   color: white;
   cursor: pointer;
 }
-td {
-  padding-right: 10px;
-  margin-left: 10px;
-  text-align: left;
-  text-decoration: none;
-  font-size: 24px;
-  color: white;
-  vertical-align: top;
-}
+/*td {
+padding-right: 10px;
+margin-left: 10px;
+text-align: left;
+text-decoration: none;
+font-size: 24px;
+color: white;
+vertical-align: top;
+}*/
 li {
-  margin-left: 60px;
+  /*margin-left: 60px;*/
   text-align: left;
   text-decoration: none;
   font-size: 24px;
@@ -90,16 +96,33 @@ li:active {
   color: white;
   cursor: pointer;
 }
-.stack {
-  opacity: 0;
-  position: absolute;
+table {
+  width: 100%
 }
+td {
+  text-align: left;
+  /*border: 1px solid #eebb55;*/
+  vertical-align: top;
+  margin-top: 0;
+  /*margin-left: -20px;*/
+
+}
+/*td.tLeft {
+width: 40%
+border: 1px solid #eebb55;
+}
+td.tRight {
+width: 60%
+border: 1px solid #eebb55;
+}*/
+
 .popover {
   color: black;
 }
 .popover-title {
   color: black;
 }
+
 [id$=xDiv] {
   position: absolute;
 }
@@ -113,7 +136,6 @@ a:hover {
   font-size: 24px;
   font-style: bold;
   color: white;
-  padding-bottom: 60px;
 }
 #main {
   min-height: 450px;
@@ -125,33 +147,28 @@ a:hover {
 #main > .left {
   margin: 4px;
   padding: 5px;
-  /*border: 1px solid #8888bb;
-  border-radius: 7pt;*/
-  /*background: #ccccff;*/
   flex: 1 6 30%;
   order: 1;
+  text-align: center;
   /*border: 1px solid white;*/
 }
 #main > .center {
   margin: 4px;
   padding: 5px;
   /*border: 1px solid #cccc33;*/
-  border-radius: 7pt;
-  /*background: #dddd88;*/
   flex: 3 1 40%;
   order: 2;
-  /*border: 1px solid red;*/
 }
 #main > .right {
   margin: 4px;
   padding: 5px;
-  border-radius: 27pt;
   /*background: #ccccff;*/
   flex: 1 6 30%;
   order: 3;
   /*border: 1px solid red;*/
   text-align: center;
 }
+
 header, footer {
   display: block;
   text-align: center;
